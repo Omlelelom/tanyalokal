@@ -4,7 +4,7 @@ A shareable, mobile-first Teluk Intan prototype adapted from the supplied HTML r
 
 ## Run locally
 
-Use Node.js 22.12 or newer (Node.js 24 recommended).
+Use Node.js 24.
 
 ```sh
 npm ci
