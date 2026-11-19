@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 3000",
     "test": "node --test",
-    "lint": "node --check src/app.js && node --check src/assistant.js"
+    "lint": "node --check src/app.js && node --check src/assistant.js && node --check src/scan.js"
   },
   "dependencies": {
     "qrcode-generator": "1.4.4"

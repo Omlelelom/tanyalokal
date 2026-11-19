@@ -13,7 +13,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:3000/teluk-intan. No API key or environment variables are required. `npm run build` produces `dist/`; `npm run preview` serves the production build. `npm test` checks the directory count, redaction, bounded recommendations, missing-data fallback, and starter-question behaviour. `npm run lint` checks JavaScript syntax.
+Open http://localhost:3000/teluk-intan. No API key or environment variables are required. `npm run build` produces `dist/`; `npm run preview` serves the production build. `npm test` checks the directory count, redaction, bounded recommendations, missing-data fallback, starter questions, public QR destination, and sharing fallbacks. `npm run lint` checks JavaScript syntax.
 
 ## What this preview does
 
@@ -21,8 +21,13 @@ Open http://localhost:3000/teluk-intan. No API key or environment variables are 
 - Answer supported questions with deterministic browser-side keyword matching and draft guides. It makes **no live AI calls** and cannot answer arbitrary questions.
 - Display place cards directly from the supplied records and mark them as unchecked.
 - Show redacted Insights for this visit only. Questions are held in memory, cleared on reload, and never sent to an application database or authority.
-- Generate a QR code locally for the current origin at `/teluk-intan?src=scan-screen`. QR attribution is a URL parameter only; it is not logged.
+- Generate a QR code locally that always opens `https://tanyalokal.vercel.app/teluk-intan?src=scan-screen`, including when downloaded from localhost or a preview deployment. QR attribution is a URL parameter only; it is not logged.
+- Download a 1200 × 1440 bilingual PNG QR poster. Share the poster and public URL with the native share menu when supported, otherwise copy the URL; if clipboard access is unavailable, show a selectable link. Export and sharing run in the browser without a backend.
 - Serve a bilingual privacy notice at `/privacy.html` (also `/privacy` on Vercel).
+
+The Scan screen uses the canonical public URL from `src/scan.js`; it never encodes the local or preview origin. The PNG is prepared while the screen is open so native file sharing can start directly from a button gesture. If the PNG is not ready or files are unsupported, the native menu shares the public link. Cancelling that menu does not copy anything. If native sharing fails or is unavailable, the app tries clipboard access and then offers a selectable link.
+
+Scan validation includes a real browser PNG download and independent QR decoding of both the PNG and the on-screen SVG capture. Native share payloads, clipboard fallback and denied-permission fallback are checked with simulated browser APIs; actual operating-system share sheets and physical phone cameras were not exercised.
 
 The original archive contains an MVP implementation brief, not an existing Next.js project. The current user request was to extract, review, run and share the prototype. This preview therefore uses Vite and plain JavaScript while retaining the supplied design. The broader brief is preserved in [docs/MVP-BRIEF.md](docs/MVP-BRIEF.md) as background requirements, **not a claim of implemented features**.
 

@@ -196,15 +196,33 @@ a { color: var(--brand); }
 .plain-list li + li { border-top: 1px solid var(--line); }
 .plain-list .sub { display: block; font-size: 0.8125rem; font-weight: 400; color: var(--muted); }
 /* Scan */
-.poster { margin-top: 1rem; background: var(--tint); border-radius: 1.5rem; padding: 1.5rem 1.25rem 1.25rem; text-align: center; }
-.poster-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.02em; }
+.scan-pad { padding-top: .75rem; }
+.scan-pad .title { text-wrap: balance; }
+.scan-pad .lede { font-size: .9375rem; text-wrap: pretty; }
+.poster { margin-top: 1.25rem; background: var(--bg); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.5rem 1.25rem 1.375rem; text-align: center; }
+.poster-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.125rem; }
 .poster-brand svg { width: 1rem; height: 1.75rem; overflow: visible; }
-.poster-ms { margin-top: 0.75rem; font-size: 1.375rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; }
-.poster-en { margin-top: 0.25rem; color: var(--muted); font-weight: 600; }
-.qr-box { width: min(100%, 16rem); margin: 1rem auto 0; background: #FFFFFF; border-radius: 1.25rem; padding: 0.75rem; box-shadow: var(--shadow); }
+.poster-location { margin-top: .25rem; color: var(--muted); font-size: .875rem; }
+.poster-heading { margin-top: .75rem; font-size: 1.125rem; font-weight: 700; text-wrap: balance; }
+.poster-caption { margin-top: .125rem; font-size: .875rem; color: var(--muted); }
+.qr-box { width: min(100%, 14rem); margin: 1rem auto 0; background: #FFFFFF; }
 .qr-box svg { display: block; width: 100%; height: auto; }
 .qr-missing { padding: 2rem 0.5rem; font-size: 0.875rem; color: var(--muted); }
-.poster-link { margin-top: 0.875rem; font-size: 0.8125rem; font-weight: 600; overflow-wrap: anywhere; }
+.poster-link { display: inline-block; margin-top: .875rem; font-size: .875rem; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
+.poster-link:hover { text-decoration: underline; }
+.scan-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-top: 1rem; }
+.scan-action { display: inline-flex; justify-content: center; align-items: center; gap: .5rem; min-height: 3rem; padding: .75rem .5rem; border: 1px solid var(--line); border-radius: .875rem; background: var(--bg); color: var(--ink); font-size: .875rem; font-weight: 700; }
+.scan-action .ico { width: 1.125rem; height: 1.125rem; }
+.scan-action:hover { background: var(--soft); }
+.scan-action-primary { background: var(--brand); color: var(--on-brand); border-color: var(--brand); }
+.scan-action-primary:hover { background: #08665c; }
+.scan-action:disabled { opacity: .6; cursor: wait; }
+.scan-status { margin-top: .75rem; font-size: .875rem; color: var(--brand); text-wrap: pretty; }
+.scan-status:empty { display: none; }
+.scan-status[data-error="true"] { color: var(--brick); }
+.scan-copy { margin-top: .75rem; }
+.scan-copy label { display: block; font-size: .875rem; font-weight: 600; }
+.scan-copy input { display: block; width: 100%; margin-top: .375rem; padding: .75rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--soft); font-size: .875rem; }
 .field { margin-top: 1.25rem; }
 .field label { display: block; font-size: 0.875rem; font-weight: 700; }
 .text { width: 100%; margin-top: 0.375rem; border: 1px solid var(--line); border-radius: 0.875rem; padding: 0.75rem 0.875rem; background: var(--bg); }

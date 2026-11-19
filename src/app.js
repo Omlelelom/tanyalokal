@@ -1,7 +1,7 @@
 import ENTRIES from "./data/entries.json";
 import GUIDES from "./data/guides.json";
-import qrcode from "qrcode-generator";
 import { getReply, redact, filterEntryIds } from "./assistant.js";
+import { createQrCode, PUBLIC_QR_URL, QR_QUIET_ZONE, prepareQrDownload, downloadQr, shareQr } from "./scan.js";
 
 // Start the banner's tilt after its illustrated tower has decoded, including on a cold load.
 const heroTower = document.querySelector(".hero-tower");
@@ -32,7 +32,9 @@ const ICONS = {
   stop: '<rect x="7" y="7" width="10" height="10" rx="2"/>',
   phone: '<path d="M6.5 4h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z"/>',
   qr: '<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><path d="M14 14h2.5v2.5H14zM20 14h.01M20 17.5V20h-2.5M14 20h.01"/>',
-  pin: '<path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.3"/>'
+  pin: '<path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.3"/>',
+  download: '<path d="M12 4v10m-4-4 4 4 4-4M5 16v4h14v-4"/>',
+  share: '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.7 7.6-4.4m-7.6 7 7.6 4.4"/>'
 };
 function icon(name) {
   const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -78,8 +80,16 @@ const N = ENTRIES.length;
 const T = {
   en: {
     tabAsk: "Ask", tabDirectory: "Directory", tabInsights: "Insights", tabScan: "Scan",
-    scanTitle: "Scan to open TanyaLokal",
-    scanLede: "Show this screen on a phone or a counter display. Scanning the code opens the Ask screen.",
+    scanTitle: "Share TanyaLokal",
+    scanLede: "Scan the code to ask about Teluk Intan.",
+    scanPosterTitle: "Scan & ask", scanPosterOther: "Imbas & tanya",
+    scanDownload: "Download", scanShare: "Share", scanCopyLabel: "Copy this link",
+    scanOpen: "Open TanyaLokal for Teluk Intan",
+    scanShareText: "Ask about Teluk Intan with TanyaLokal.",
+    scanPreparing: "Preparing your PNG…", scanDownloaded: "Your QR image is ready to save.",
+    scanDownloadError: "The image couldn’t be created. Please try downloading again.",
+    scanShared: "Shared.", scanCopied: "Link copied. Paste it wherever you’d like to share.",
+    scanManual: "Copy the link below to share TanyaLokal.",
     qrMissing: "The QR code couldn’t be drawn in this view. Share the link instead.",
     qrAlt: "QR code that opens",
     heroTitle: "Ask anything about Teluk Intan.",
@@ -125,8 +135,16 @@ const T = {
   },
   ms: {
     tabAsk: "Tanya", tabDirectory: "Direktori", tabInsights: "Laporan", tabScan: "Imbas",
-    scanTitle: "Imbas untuk buka TanyaLokal",
-    scanLede: "Tunjukkan skrin ini pada telefon atau paparan kaunter. Mengimbas kod akan membuka skrin Tanya.",
+    scanTitle: "Kongsi TanyaLokal",
+    scanLede: "Imbas kod untuk tanya tentang Teluk Intan.",
+    scanPosterTitle: "Imbas & tanya", scanPosterOther: "Scan & ask",
+    scanDownload: "Muat turun", scanShare: "Kongsi", scanCopyLabel: "Salin pautan ini",
+    scanOpen: "Buka TanyaLokal untuk Teluk Intan",
+    scanShareText: "Tanya tentang Teluk Intan dengan TanyaLokal.",
+    scanPreparing: "Sedang menyediakan PNG…", scanDownloaded: "Imej QR anda sedia untuk disimpan.",
+    scanDownloadError: "Imej tidak dapat disediakan. Sila cuba muat turun semula.",
+    scanShared: "Dikongsi.", scanCopied: "Pautan disalin. Tampalkannya di tempat anda ingin berkongsi.",
+    scanManual: "Salin pautan di bawah untuk berkongsi TanyaLokal.",
     qrMissing: "Kod QR tidak dapat dilukis dalam paparan ini. Kongsi pautan itu sahaja.",
     qrAlt: "Kod QR yang membuka",
     heroTitle: "Tanya apa saja pasal Teluk Intan.",
@@ -403,27 +421,23 @@ async function ask(raw) {
   }
 }
 
-/* ---------- QR opens this deployment, never a third-party artifact. ---------- */
-function drawQr(link) {
+/* ---------- QR always opens the public Vercel app. ---------- */
+function drawQr() {
   const box = $("qr-box");
   box.textContent = "";
-  $("qr-link-text").textContent = link;
-  if (typeof qrcode !== "function") { box.append(el("p", "qr-missing", t("qrMissing"))); return; }
   let qr;
   try {
-    qr = qrcode(0, "M");
-    qr.addData(link);
-    qr.make();
+    qr = createQrCode();
   } catch (err) { box.append(el("p", "qr-missing", t("qrMissing"))); return; }
   const n = qr.getModuleCount();
   let d = "";
   for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) d += "M" + c + " " + r + "h1v1h-1z";
   const NS = "http://www.w3.org/2000/svg";
   const svg = document.createElementNS(NS, "svg");
-  svg.setAttribute("viewBox", "-4 -4 " + (n + 8) + " " + (n + 8));
+  svg.setAttribute("viewBox", `${-QR_QUIET_ZONE} ${-QR_QUIET_ZONE} ${n + QR_QUIET_ZONE * 2} ${n + QR_QUIET_ZONE * 2}`);
   svg.setAttribute("shape-rendering", "crispEdges");
   svg.setAttribute("role", "img");
-  svg.setAttribute("aria-label", t("qrAlt") + " " + link);
+  svg.setAttribute("aria-label", t("qrAlt") + " " + PUBLIC_QR_URL);
   const path = document.createElementNS(NS, "path");
   path.setAttribute("d", d);
   path.setAttribute("fill", "#111111");
@@ -431,7 +445,57 @@ function drawQr(link) {
   box.append(svg);
 }
 function renderScan() {
-  drawQr(new URL("/teluk-intan?src=scan-screen", location.origin).href);
+  drawQr();
+  $("qr-link-text").href = PUBLIC_QR_URL;
+  $("qr-link-text").setAttribute("aria-label", t("scanOpen"));
+  $("scan-poster-title").lang = lang;
+  $("scan-poster-other").lang = lang === "ms" ? "en" : "ms";
+  $("scan-share-link").value = PUBLIC_QR_URL;
+  $("scan-status").textContent = "";
+  $("scan-copy").hidden = true;
+}
+
+function scanStatus(message, error = false) {
+  $("scan-status").textContent = message;
+  $("scan-status").dataset.error = String(error);
+}
+
+async function handleScanDownload() {
+  const button = $("scan-download");
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  scanStatus(t("scanPreparing"));
+  try {
+    await downloadQr();
+    scanStatus(t("scanDownloaded"));
+  } catch {
+    scanStatus(t("scanDownloadError"), true);
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
+}
+
+async function handleScanShare() {
+  const button = $("scan-share");
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  $("scan-copy").hidden = true;
+  scanStatus("");
+  try {
+    const result = await shareQr({ title: "TanyaLokal · Teluk Intan", text: t("scanShareText") });
+    if (result === "shared") scanStatus(t("scanShared"));
+    if (result === "copied") scanStatus(t("scanCopied"));
+    if (result === "manual") {
+      scanStatus(t("scanManual"));
+      $("scan-copy").hidden = false;
+      $("scan-share-link").focus();
+      $("scan-share-link").select();
+    }
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
 }
 /* ---------- Wiring ---------- */
 function applyLang() {
@@ -474,6 +538,7 @@ function route() {
   document.querySelectorAll(".tabbar a").forEach(a => {
     if (a.dataset.tab === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
+  if (v === "scan") prepareQrDownload().catch(() => {});
 }
 document.querySelectorAll("[data-ico]").forEach(n => n.prepend(icon(n.dataset.ico)));
 document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => { lang = b.dataset.lang; applyLang(); }));
@@ -496,6 +561,8 @@ $("box").addEventListener("input", ev => {
 });
 $("search").addEventListener("input", renderDir);
 $("ins-clear").addEventListener("click", clearSaved);
+$("scan-download").addEventListener("click", handleScanDownload);
+$("scan-share").addEventListener("click", handleScanShare);
 window.addEventListener("hashchange", route);
 setBusy(false);
 applyLang();

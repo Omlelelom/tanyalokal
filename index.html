@@ -123,16 +123,26 @@
         </div>
       </div>
     </section>
-    <section class="view" id="view-scan">
-      <div class="pad">
-        <h2 class="title" data-i18n="scanTitle">Scan to open TanyaLokal</h2>
+    <section class="view" id="view-scan" aria-labelledby="scan-title">
+      <div class="pad scan-pad">
+        <h2 class="title" id="scan-title" data-i18n="scanTitle">Share TanyaLokal</h2>
         <p class="lede" data-i18n="scanLede"></p>
         <div class="poster">
           <p class="poster-brand"><svg viewBox="0 0 120 214" aria-hidden="true"><use href="#tower-art"/></svg>TanyaLokal</p>
-          <p class="poster-ms" lang="ms">Imbas untuk tanya apa saja pasal Teluk Intan</p>
-          <p class="poster-en" lang="en">Scan to ask anything about Teluk Intan</p>
+          <p class="poster-location">Teluk Intan, Perak</p>
           <div class="qr-box" id="qr-box"></div>
-          <p class="poster-link" id="qr-link-text"></p>
+          <h3 class="poster-heading" id="scan-poster-title" data-i18n="scanPosterTitle">Scan &amp; ask</h3>
+          <p class="poster-caption" id="scan-poster-other" data-i18n="scanPosterOther" lang="ms">Imbas &amp; tanya</p>
+          <a class="poster-link" id="qr-link-text" href="https://tanyalokal.vercel.app/teluk-intan?src=scan-screen">tanyalokal.vercel.app</a>
+        </div>
+        <div class="scan-actions">
+          <button class="scan-action scan-action-primary" id="scan-download" type="button" data-ico="download"><span data-i18n="scanDownload">Download</span></button>
+          <button class="scan-action" id="scan-share" type="button" data-ico="share"><span data-i18n="scanShare">Share</span></button>
+        </div>
+        <p class="scan-status" id="scan-status" role="status" aria-live="polite"></p>
+        <div class="scan-copy" id="scan-copy" hidden>
+          <label for="scan-share-link" data-i18n="scanCopyLabel">Copy this link</label>
+          <input id="scan-share-link" type="text" readonly spellcheck="false" autocomplete="off">
         </div>
       </div>
     </section>
