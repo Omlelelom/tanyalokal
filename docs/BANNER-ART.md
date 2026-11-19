@@ -37,3 +37,20 @@ The tower asset is `public/art/teluk-intan-tower.webp` (567 × 1476), cropped to
 ## Validation
 
 The production build and JavaScript syntax checks pass. Isolated local Chrome checks verified that both images load, the tower's transform changes during its tilt animation, and reduced-motion mode has no active tower animation. Layout checks found no page overflow at 320px, 390px and 1280px. English and Malay were visually checked at 390px, with an additional Malay check at 320px. The original chat, directory and data logic were not modified.
+
+
+## Morning-light revision
+
+The user requested a fresh morning palette to blend with the white and pale mint light theme. The approved composition, separate tower layer and tilt animation are retained. This lighting edit used the built-in image editor because the ChatGPT web browser connection was unavailable. The original warm assets remain under their existing filenames. The page overlay also changes from warm cream to a cool near-white tint.
+
+Final assets: `public/art/teluk-intan-morning-riverside-960.webp`, `public/art/teluk-intan-morning-riverside-1536.webp` and `public/art/teluk-intan-morning-tower.webp`. Full edited PNG originals are retained in ignored `.qa/banner-generated/morning-riverside-original.png` and `.qa/banner-generated/morning-tower-original.png`. Encoding and transparent-margin cropping do not change the illustrated content.
+
+### Background edit prompt
+
+Use case: lighting-weather. Edit the supplied riverside background illustration ONLY to change its lighting and colour temperature from warm late-afternoon/sunset to a fresh, softly lit morning around 9 am. Preserve the EXACT scene composition, building silhouettes and positions, river shoreline, trees, cloud placement, large empty upper area and left two-thirds, 3:2 landscape framing, fine paper grain and softly shaded gouache/travel-poster illustration style. Make the sky a luminous very pale powder blue fading gently toward near-white at the horizon, with soft white clouds and a faint cool blue-grey shadow. Use clear neutral daylight from the upper left, fresh natural greens, cool light-blue river reflections, softly off-white building walls and natural terracotta roofs. Remove the strong yellow/orange wash, peach sunset tones and lavender dusk mood; keep contrast soft and the upper/left area clean enough for dark website text. This should blend beautifully into a white and pale mint light-mode interface. Do not add a tower, text, typography, people, objects, logos, borders or UI. Do not redesign the scene or change its perspective. Output only the edited background asset.
+
+### Tower edit prompt
+
+Use case: lighting-weather. Edit ONLY the lighting and colour temperature of the supplied transparent Teluk Intan clock-tower illustration to match fresh, soft morning daylight around 9 am. Preserve the EXACT upright tower structure, eight stacked levels, silhouette, clock face and hands, windows, doorway, roof geometry, perspective, proportions, composition, full roof-to-base framing and finely grained gouache/travel-poster style. Keep the tower completely upright for a later CSS tilt animation. Light it from the upper left with bright soft neutral daylight: clean off-white/ivory plaster, gentle cool blue-grey shadow planes, natural terracotta-red roofs and a subtle light-gold clock face. Remove the amber/orange sunset cast, orange glow/halo and dramatic warm side lighting. Maintain the genuine transparent alpha background; outside the tower must be fully transparent, not black, white, sky or a checkerboard pattern. No new scenery, ground scene, people, buildings, text, labels, logos or watermarks. Output only this same isolated tower cutout, relit for morning.
+
+Morning revision validation: the production build passes; both new images load; the tower reaches its existing 4.5-degree lean; and reduced-motion mode has no active tower animation. English and Malay were visually checked at 390px, with no horizontal overflow at 320px, 390px or 1280px. The edited tower retains real alpha transparency and is encoded at 570 × 1478 pixels.
