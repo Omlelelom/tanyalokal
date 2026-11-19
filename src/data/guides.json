@@ -1,0 +1,37 @@
+[
+  {
+    "id": "g1",
+    "title": "Applying to a public university, polytechnic or community college",
+    "category": "education",
+    "body": "Applications to Malaysian public universities, polytechnics and community colleges go through UPUOnline, the central system run by the Ministry of Higher Education. Private universities and colleges take applications directly. Intake dates and entry requirements change every year, so confirm them on the official UPU portal. Local options in Teluk Intan include Kolej Komuniti Teluk Intan and Kolej Vokasional Teluk Intan. UiTM and UKM run Faculty of Medicine campuses beside Hospital Teluk Intan, with admission handled by the main universities. School counsellors can help with the application and a supporting letter.",
+    "status": "draft"
+  },
+  {
+    "id": "g2",
+    "title": "Scholarships, school aid and study loans",
+    "category": "education",
+    "body": "School-level aid is applied for through the student's own school, so the first stop is the school office or counsellor. Questions the school cannot answer go to the district education office (Pejabat Pendidikan Daerah Hilir Perak). For study after SPM or STPM, the main national bodies are JPA and MARA for scholarships and PTPTN for study loans, and Yayasan Perak for Perak students. Each has its own online portal, eligibility rules and closing dates, which must be confirmed on the official site. Families needing welfare support can ask the district social welfare office (JKM).",
+    "status": "draft"
+  },
+  {
+    "id": "g3",
+    "title": "Dental treatment, including root canals",
+    "category": "health",
+    "body": "The directory lists two private dental clinics and the district government dental health office. It does not record which treatments each one offers. Root canal treatment is not offered by every clinic, so call first and ask whether they do it for the tooth concerned and what it costs. Government dental care is arranged through the government dental clinic. Complicated cases may be referred to a specialist outside Teluk Intan.",
+    "status": "draft"
+  },
+  {
+    "id": "g4",
+    "title": "Reporting a local problem",
+    "category": "government",
+    "body": "Potholes on town roads, blocked drains, rubbish collection, streetlights and licensing are handled by the municipal council, Majlis Perbandaran Teluk Intan (www.mpti.gov.my). Electricity faults go to TNB and water supply problems to Lembaga Air Perak. For a fire or a life-threatening emergency call 999. Note the exact location and take a photo before reporting.",
+    "status": "draft"
+  },
+  {
+    "id": "g5",
+    "title": "About Teluk Intan",
+    "category": "other",
+    "body": "Teluk Intan is the capital of Hilir Perak district in Perak, on the Perak River. Postcodes are in the 36xxx range and the phone area code is 05. The town was called Teluk Anson until 1982. Its best-known landmark is the Leaning Tower (Menara Condong), built in 1885. Local foods include chee cheong fun, heong peah, mee rebus, mee Jawa and nasi kandar.",
+    "status": "draft"
+  }
+]

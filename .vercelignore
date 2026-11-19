@@ -1,0 +1,13 @@
+.git
+node_modules
+.qa
+*.zip
+reference
+seed
+docs
+tests
+PROMPT.md
+codex-prompt.md
+entries.csv
+guides.json
+tanyalokal-teluk-intan.html

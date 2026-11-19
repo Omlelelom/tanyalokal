@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>TanyaLokal — Teluk Intan</title>
+<meta name="description" content="Explore Teluk Intan with TanyaLokal. A bilingual directory and interactive local assistant prototype.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="tower-art" viewBox="0 0 120 214" overflow="visible">
+    <g class="leaner">
+      <rect class="t-body" x="21" y="186" width="78" height="28"/>
+      <rect class="t-win" x="54" y="196" width="12" height="18"/>
+      <path class="t-roof" d="M15 186 L105 186 L98 178 L22 178 Z"/>
+      <rect class="t-body" x="25" y="156" width="70" height="22"/>
+      <path class="t-roof" d="M19 156 L101 156 L94 148 L26 148 Z"/>
+      <rect class="t-body" x="29" y="128" width="62" height="20"/>
+      <path class="t-roof" d="M23 128 L97 128 L90 120 L30 120 Z"/>
+      <rect class="t-body" x="32" y="102" width="56" height="18"/>
+      <path class="t-roof" d="M26 102 L94 102 L87 94 L33 94 Z"/>
+      <rect class="t-body" x="35" y="78" width="50" height="16"/>
+      <path class="t-roof" d="M29 78 L91 78 L84 70 L36 70 Z"/>
+      <rect class="t-body" x="38" y="56" width="44" height="14"/>
+      <path class="t-roof" d="M32 56 L88 56 L81 48 L39 48 Z"/>
+      <rect class="t-body" x="41" y="30" width="38" height="18"/>
+      <circle class="t-clock" cx="60" cy="39" r="5.5"/>
+      <path class="t-roof" d="M34 30 L86 30 L60 8 Z"/>
+    </g>
+  </symbol>
+</svg>
+<noscript>Please enable JavaScript to use this interactive prototype. Sila aktifkan JavaScript.</noscript>
+<div class="app">
+  <header class="top">
+    <a class="brand" href="#ask">
+      <svg class="brand-mark" viewBox="0 0 120 214" aria-hidden="true"><use href="#tower-art"/></svg>
+      <span class="brand-name">TanyaLokal</span>
+    </a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ms" aria-pressed="false">BM</button>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    </div>
+  </header>
+
+  <p class="preview-notice"><span lang="en">Prototype · Questions stay in this visit.</span> <span lang="ms">Soalan untuk lawatan ini sahaja.</span> <a href="/privacy.html">Privacy / Privasi</a></p>
+  <main class="views" id="main-content">
+    <section class="view" id="view-ask" aria-labelledby="hero-title">
+      <div class="thread" id="thread">
+        <div id="hero">
+          <div class="hero-card">
+            <div class="hero-text">
+              <p class="where" data-ico="pin">Teluk Intan, Perak</p>
+              <h1 id="hero-title" data-i18n="heroTitle">Ask anything about Teluk Intan.</h1>
+              <p class="hero-sub" id="hero-sub"></p>
+            </div>
+            <svg class="tower" viewBox="0 0 120 214" role="img" aria-label="The Leaning Tower of Teluk Intan"><use href="#tower-art"/></svg>
+          </div>
+          <h2 class="h2" data-i18n="topicsTitle">Browse by topic</h2>
+          <div class="scroller" id="topics"></div>
+          <h2 class="h2" data-i18n="startersTitle">Try asking</h2>
+          <ul class="starters" id="starters"></ul>
+        </div>
+        <div class="msgs" id="msgs" aria-live="polite"></div>
+      </div>
+      <div class="composer">
+        <div class="composer-pill">
+          <textarea id="box" rows="1" maxlength="600" aria-label="Your question"></textarea>
+          <button class="send" id="send" type="button" aria-label="Send"></button>
+        </div>
+        <p class="fineprint" id="fineprint"></p>
+      </div>
+    </section>
+
+    <section class="view" id="view-directory">
+      <div class="pad">
+        <h2 class="title" data-i18n="dirTitle">Directory</h2>
+        <p class="lede" id="dir-lede"></p>
+        <div class="search-wrap" data-ico="search">
+          <input class="search" id="search" type="search" autocomplete="off">
+        </div>
+        <div class="scroller cats" id="cats" role="group" aria-label="Category"></div>
+        <p class="notice" data-i18n="dirNotice"></p>
+        <p class="count" id="count" aria-live="polite"></p>
+        <ul id="dir-list"></ul>
+        <p class="empty" id="dir-empty" hidden></p>
+        <p class="source-line" data-i18n="attribution"></p>
+      </div>
+    </section>
+
+    <section class="view" id="view-insights">
+      <div class="pad">
+        <h2 class="title" data-i18n="insTitle">What residents are asking</h2>
+        <p class="lede" id="ins-lede"></p>
+        <p class="notice" id="ins-note" hidden></p>
+        <p class="empty" id="ins-empty"></p>
+        <div id="ins-body" hidden>
+          <div class="stats">
+            <div class="stat"><p class="stat-n" id="st-q">0</p><p class="stat-l" data-i18n="statQ"></p></div>
+            <div class="stat"><p class="stat-n" id="st-gap">0</p><p class="stat-l" data-i18n="statGap"></p></div>
+            <div class="stat"><p class="stat-n" id="st-issue">0</p><p class="stat-l" data-i18n="statIssue"></p></div>
+          </div>
+          <div class="card">
+            <h3 data-i18n="insByTopic">By topic</h3>
+            <div class="bars" id="ins-bars"></div>
+          </div>
+          <div class="card">
+            <h3 data-i18n="insGaps">No local answer yet</h3>
+            <p class="hint" data-i18n="insGapsHint"></p>
+            <ul class="plain-list" id="ins-gaps"></ul>
+          </div>
+          <div class="card">
+            <h3 data-i18n="insIssues">Problems reported</h3>
+            <p class="hint" data-i18n="insIssuesHint"></p>
+            <ul class="plain-list" id="ins-issues"></ul>
+          </div>
+          <button class="linkbtn" id="ins-clear" type="button" hidden></button>
+        </div>
+      </div>
+    </section>
+    <section class="view" id="view-scan">
+      <div class="pad">
+        <h2 class="title" data-i18n="scanTitle">Scan to open TanyaLokal</h2>
+        <p class="lede" data-i18n="scanLede"></p>
+        <div class="poster">
+          <p class="poster-brand"><svg viewBox="0 0 120 214" aria-hidden="true"><use href="#tower-art"/></svg>TanyaLokal</p>
+          <p class="poster-ms" lang="ms">Imbas untuk tanya apa saja pasal Teluk Intan</p>
+          <p class="poster-en" lang="en">Scan to ask anything about Teluk Intan</p>
+          <div class="qr-box" id="qr-box"></div>
+          <p class="poster-link" id="qr-link-text"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Sections">
+    <a href="#ask" data-tab="ask" data-ico="chat"><span data-i18n="tabAsk">Ask</span></a>
+    <a href="#directory" data-tab="directory" data-ico="search"><span data-i18n="tabDirectory">Directory</span></a>
+    <a href="#insights" data-tab="insights" data-ico="chart"><span data-i18n="tabInsights">Insights</span></a>
+    <a href="#scan" data-tab="scan" data-ico="qr"><span data-i18n="tabScan">Scan</span></a>
+  </nav>
+</div>
+
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>

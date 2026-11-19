@@ -1,0 +1,195 @@
+id,category,kind,name,address,phone,hours,lat,lon,source,note
+e1,health,hospital,Hospital Teluk Intan,"Jalan Changkat Jong, Bandar Baru",+60 5-629 8400,Open 24 hours,4.00298,101.03894,osm,Government hospital with an emergency and trauma department
+e2,health,hospital,Anson Bay Medical Centre,"Jalan Maharaja Lela, Batak Rabit",,,3.99391,100.99590,osm,Private medical centre
+e3,health,hospital,Pusat Pakar Rajindar Singh,,,,,,wiki,Private specialist centre. Address not recorded
+e4,health,clinic,Klinik Kesihatan Teluk Intan,"Jalan Bandar, Bandar Lama",,,4.02895,101.02062,osm,Government health clinic
+e5,health,clinic,Anson Klinik,"Jalan Sultan Abdullah, Bandar Baru",,,4.00990,101.01952,osm,
+e6,health,clinic,Klinik Good Care,"Jalan Sultan Abdullah, Bandar Baru",,,4.00980,101.01875,osm,
+e7,health,clinic,Klinik Happy Family,"Lorong Enggang C4/1, Bandar Baru",,,4.01048,101.01918,osm,
+e8,health,clinic,Klinik 1 Malaysia,"Jalan Kampung Banjar, Batak Rabit",,,3.99436,101.00530,osm,Name as recorded on OpenStreetMap. May now be called Klinik Komuniti
+e9,health,clinic,Klinik Desa Kampung Selabak,"Jalan Kampung Selabak, Kampung Selabak",,,3.97439,101.05015,osm,Government rural clinic
+e10,health,clinic,Teluk Intan General Clinic,,,,,,wiki,Address not recorded
+e11,health,clinic,Klinik Anda,,,,,,wiki,Address not recorded
+e12,health,clinic,Poliklinik Dr Azhar,,,,,,wiki,Address not recorded
+e13,health,clinic,Klinik Al-Amin,,,,,,wiki,Address not recorded
+e14,health,clinic,Klinik Dr Ko,,,,,,wiki,Address not recorded
+e15,health,dentist,Klinik Pergigian Ng Dental,"Lorong Enggang C4/1, Bandar Baru",,,4.01060,101.01925,osm,Private dental clinic. Treatments offered not recorded
+e16,health,dentist,Klinik Pergigian Ong,"Jalan Sultan Abdullah, Bandar Baru",,,4.01002,101.01961,osm,Private dental clinic. Treatments offered not recorded
+e17,health,dental office,Pejabat Kesihatan Pergigian Hilir Perak,"Jalan Putra, Bandar Lama",,,4.02759,101.01783,osm,District government dental health office
+e18,health,pharmacy,Farmasi Intan,"Lorong Enggang C4/1, Bandar Baru",,,4.01031,101.01908,osm,
+e19,health,pharmacy,Guardian,"Jalan Intan 1, Bandar Baru",,,4.01935,101.02262,osm,
+e20,health,health office,Pejabat Kesihatan Daerah Hilir Perak,"Jalan Padang Tembak, Batak Rabit",,,4.00099,101.01189,osm,District health office
+e21,health,veterinary office,Pejabat Veterinar Daerah Hilir Perak,"Jalan Maharaja Lela, Batak Rabit",,,4.00486,101.01341,osm,District veterinary office
+e22,government,council,Majlis Perbandaran Teluk Intan,"Jalan Speedy, Bandar Baru",,,4.02220,101.02584,osm,Teluk Intan Municipal Council (MPTI). Website www.mpti.gov.my
+e23,government,government office,Pejabat Daerah & Tanah Hilir Perak,"Jalan Changkat Jong, Bandar Baru",,,4.02160,101.02287,osm,District and land office
+e24,government,government office,Pejabat Kebajikan Masyarakat Daerah Perak Hilir,"Jalan Intan 3, Bandar Baru",,,4.01911,101.02199,osm,District social welfare office (JKM)
+e25,government,government office,Pejabat Pendidikan Daerah Hilir Perak,"Jalan Maharaja Lela, Batak Rabit",,,4.00417,101.01425,osm,District education office
+e26,government,government office,Pejabat Pendidikan Hilir Perak,"Jalan Raja, Bandar Lama",,,4.02778,101.01912,osm,Second education office listing on OpenStreetMap. Confirm which is current
+e27,government,government office,Jabatan Imigresen Teluk Intan,"Jalan Changkat Jong, Bandar Baru",,,4.02096,101.02372,osm,Immigration department
+e28,government,government office,JPJ Teluk Intan,Jalan Teluk Intan-Simpang Empat,,,3.96011,100.97843,osm,Road transport department
+e29,government,government office,Lembaga Hasil Dalam Negeri Teluk Intan,"Jalan Maharaja Lela, Bandar Baru",,,4.02174,101.02020,osm,Inland revenue board (LHDN)
+e30,government,government office,KWSP Teluk Intan,"Jalan Changkat Jong, Taman Cicely",,,4.00209,101.04417,osm,Employees Provident Fund (EPF)
+e31,government,government office,Jabatan Alam Sekitar Teluk Intan,"Jalan Syed Abu Bakar, Bandar Lama",,,4.02548,101.02302,osm,Department of environment
+e32,government,government office,Jabatan Kastam Teluk Intan,"Jalan Maharaja Lela, Batak Rabit",,,4.00364,101.01289,osm,Customs department
+e33,government,police,IPD Hilir Perak,Jalan Sungai Manik,,,4.01627,101.04480,osm,District police headquarters
+e34,government,fire station,Balai Bomba Teluk Intan,"Jalan Laksamana, Bandar Baru",,,4.01558,101.03128,osm,Fire station
+e35,government,post office,Pejabat Pos Teluk Intan,"Jalan Mahkamah, Bandar Lama",,,4.02359,101.01905,osm,
+e36,government,post office,PosLaju,"Jalan Intan 5, Bandar Baru",,,4.01878,101.02106,osm,
+e37,government,utility,TNB Teluk Intan,"Jalan Changkat Jong, Bandar Baru",,,4.02166,101.02100,osm,Electricity (Tenaga Nasional)
+e38,government,utility,Lembaga Air Perak Teluk Intan,"Jalan Changkat Jong, Bandar Baru",,,4.00562,101.03320,osm,Water supply
+e39,government,utility,TMpoint Kiosk,"Jalan Changkat Jong, Bandar Baru",,Open 24 hours,4.02070,101.02444,osm,Telekom Malaysia kiosk
+e40,education,university,UiTM Teluk Intan,"Jalan Changkat Jong, Bandar Baru",,,4.00599,101.03758,osm,"Universiti Teknologi MARA campus for the Faculty of Medicine, beside the hospital"
+e41,education,university,UKM Teluk Intan campus,,,,,,wiki,"Universiti Kebangsaan Malaysia Faculty of Medicine campus, beside the hospital"
+e42,education,college,Kolej Komuniti Teluk Intan,,,,,,wiki,"Community college, established 2001. Address not recorded"
+e43,education,college,Kolej Vokasional Teluk Intan,Jalan Changkat Jong,,,3.99060,101.05386,osm,"Vocational college, formerly Sekolah Menengah Teknik Teluk Intan"
+e44,education,secondary school,Sekolah Menengah Sains Teluk Intan,,,,,,wiki,Boarding school. Address not recorded
+e45,education,secondary school,San Min Private Secondary School,"Jalan Sungai Nibong, Bandar Baru",+60 5-622 1622,,4.01815,101.03384,osm,Private secondary school (SUWA)
+e46,education,secondary school,SMJK San Min,"Lot 1146, Jalan Merbok, Bandar Baru",+60 5-622 1216,,4.00521,101.02694,osm,
+e47,education,secondary school,SMK Convent Teluk Intan,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02640,101.02281,osm,Founded 1919
+e48,education,secondary school,SMK St. Anthony,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02636,101.02376,osm,Founded 1932
+e49,education,secondary school,SMK Horley Methodist,"Jalan Raja Musa, Bandar Lama",,,4.02700,101.02528,osm,Founded 1899
+e50,education,secondary school,SMK Sultan Abdul Aziz,"Jalan Padang Tembak, Batak Rabit",,,4.00062,101.01296,osm,Founded 1952
+e51,education,secondary school,SMK Seri Perak,"Jalan Changkat Jong, Bandar Baru",,,4.00917,101.04150,osm,Founded 1957
+e52,education,secondary school,SMK Raja Muda Musa,"Lorong Emas L2/17, Batak Rabit",,,3.99201,101.01292,osm,
+e53,education,secondary school,SMK Abdul Rahman Talib,"Jalan Changkat Jong, Taman Desa Ramah",,,3.99038,101.05646,osm,
+e54,education,secondary school,SMK Seri Kandi,Jalan Padang Tembak,,,3.99505,101.04349,osm,
+e55,education,secondary school,SMK Seri Setia,Jalan Padang Tembak,,,3.99223,101.03089,osm,
+e56,education,secondary school,SMK Kampung Bahagia,Jalan Sungai Manik,,,4.03598,101.04888,osm,
+e57,education,primary school,SK Sultan Idris II,"Jalan Jawa, Bandar Baru",,,4.02350,101.02784,osm,Founded 1933
+e58,education,primary school,SK Dato' Laksamana Raja Mahkota,"Jalan Maharaja Lela, Batak Rabit",,,3.99276,100.99407,osm,
+e59,education,primary school,SK Kampong Bahagia,Jalan Sungai Manik,,,4.03734,101.04814,osm,
+e60,education,primary school,SK Sungai Tungku,Jalan Sungai Manik,,,4.07547,101.03861,osm,
+e61,education,primary school,SK Tebok Banjar,Kampung Banjar,,,3.98215,101.02663,osm,
+e62,education,primary school,SJK (C) San Min 1 & 2,"Jalan Putra, Bandar Lama",+60 5-622 1891,,4.02810,101.01728,osm,
+e63,education,primary school,SJK (C) Chong Min,"1997, Jalan Padang Tembak, Batak Rabit",+60 5-622 3008,,4.00178,101.01380,osm,
+e64,education,primary school,SJK (C) Phooi Yong,"247, Jalan Pasir Bedamar, Bandar Lama",+60 5-622 5337,,4.03193,101.00852,osm,
+e65,education,primary school,"SJK (C) Chung Hwa, Sungai Suli",Jalan Utama Sungai Suli,,,4.04307,101.03234,osm,
+e66,education,primary school,SJK (T) Thiruvalluvar,"Jalan Ah Cheong, Bandar Lama",,,4.02737,101.01643,osm,
+e67,education,primary school,SJK (T) Sithambaram Pillay,"Jalan Jawa, Bandar Baru",,,4.02044,101.02579,osm,
+e68,education,primary school,SJK (T) Ladang Batak Rabit,"Jalan Tebuk Banjar, Batak Rabit",,,3.98827,101.01070,osm,
+e69,education,primary school,SJK (T) Ladang Sabrang,"Jalan Maharaja Lela, Batak Rabit",,,4.01031,101.00229,osm,
+e70,education,primary school,SJK (T) Ladang Selaba,"Jalan Changkat Jong, Taman Desa Ramah",,,3.99091,101.06516,osm,
+e71,education,primary school,SJK (T) Ladang Sungai Timah,Jalan Woo Saik Hong,,,4.04508,100.99247,osm,
+e72,education,primary school,SJK (T) Ladang Nova Scotia 1,Jalan Maharaja Lela,,,3.96839,100.98156,osm,
+e73,education,primary school,SJK (T) Ladang Rubana 1,,,,3.97628,100.97075,osm,
+e74,education,religious school,SRAR As-Saadah Al-Abadiah,Jalan Sungai Manik,,,4.03607,101.04725,osm,
+e75,education,kindergarten,Tabika Perpaduan Jalan Pasar,"Jalan Pasar, Bandar Lama",,,4.02874,101.01319,osm,
+e76,education,kindergarten,Tabika Perpaduan Taman Intan Mutiara,"Lorong Mutiara 2, Batak Rabit",,,3.98088,101.00601,osm,
+e77,education,driving school,Gabongan Sekolah Memandu (Hilir Perak) Sdn. Bhd,"Laluan Intan, Bandar Baru",,,4.01926,101.02334,osm,
+e78,education,special centre,Bethany Home,,,,,,wiki,"Epilepsy and autism centre, founded 1966. Address not recorded"
+e79,money,bank,Affin Bank,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02499,101.02274,osm,
+e80,money,bank,Agrobank (Laluan Sentral Intan),"Laluan Sentral Intan, Bandar Lama",,,4.02318,101.02111,osm,
+e81,money,bank,Agrobank (Jalan Pasar),"Jalan Pasar, Bandar Lama",,,4.02387,101.02162,osm,
+e82,money,bank,AmBank,"Jalan Mahkota, Bandar Lama",,,4.02619,101.02136,osm,
+e83,money,bank,Bank Islam,"Jalan Mahkamah, Bandar Baru",,,4.02213,101.02024,osm,
+e84,money,bank,Bank Rakyat,"Jalan Intan 5, Bandar Baru",,,4.01977,101.02191,osm,
+e85,money,bank,Bank Simpanan Nasional,"Jalan Mahkota, Bandar Lama",,,4.02574,101.02106,osm,
+e86,money,bank,CIMB Bank,"Jalan Pasar, Bandar Lama",,,4.02411,101.02116,osm,
+e87,money,bank,Hong Leong Bank,"Jalan Ah Cheong, Bandar Lama",,,4.02581,101.01931,osm,
+e88,money,bank,HSBC,"Jalan Mahkamah, Bandar Lama",,,4.02331,101.01920,osm,
+e89,money,bank,Maybank,"Jalan Ah Cheong, Bandar Lama",,,4.02424,101.02181,osm,
+e90,money,bank,OCBC Bank,"Jalan Mahkota, Bandar Lama",,,4.02650,101.02156,osm,
+e91,money,bank,Public Bank,"Jalan Pasar, Bandar Lama",,,4.02666,101.01629,osm,
+e92,money,bank,RHB Bank,"Jalan Intan 2, Bandar Baru",,,4.02102,101.02198,osm,
+e93,money,bank,Tabung Haji,"Jalan Mahkamah, Bandar Baru",,,4.02203,101.02043,osm,Pilgrims fund branch
+e94,food,food court,Medan Selera Menara Condong,"Jalan Bandar, Bandar Lama",,,4.02463,101.01904,osm,Food court near the Leaning Tower
+e95,food,food court,Medan Selera Taman Indah Jaya,"Jalan Teratai J4/2, Bandar Baru",,,4.00384,101.01953,osm,
+e96,food,restaurant,Restoran Udang Galah Teluk Intan,"Jalan Speedy, Bandar Baru",,"07:00 to 18:00, closed Sunday",4.02344,101.02241,osm,
+e97,food,restaurant,Jie San Lou Vegetarian Restaurant,"Jalan Bandar, Bandar Lama",,,4.02688,101.01994,osm,Vegetarian
+e98,food,restaurant,Kenny Rogers Roasters,"Jalan Intan 2, Bandar Baru",,,4.02032,101.02324,osm,
+e99,food,restaurant,Krishna Restaurant,"Jalan Changkat Jong, Bandar Baru",,,4.01305,101.03167,osm,
+e100,food,restaurant,Man Chong Seafood,"Jalan Changkat Jong, Bandar Baru",,,4.01717,101.02789,osm,Seafood
+e101,food,restaurant,Myeongdong Topokki,"Jalan Intan 4, Bandar Baru",,,4.01988,101.02297,osm,Korean
+e102,food,restaurant,Nasi Kandar Mass Maju,"Jalan Intan 2, Bandar Baru",,,4.01955,101.02287,osm,Nasi kandar
+e103,food,restaurant,Pizza Hut,"Jalan Intan 2, Bandar Baru",,11:00 to 23:00,4.02044,101.02303,osm,
+e104,food,restaurant,Ramli Selera Kampung,"Jalan Padang Tembak, Batak Rabit",,,4.00198,101.01318,osm,
+e105,food,restaurant,Restoran AK Kitchen,"Jalan Sultan Abdullah, Bandar Baru",,,4.00972,101.01871,osm,
+e106,food,restaurant,Restoran Han Cheng,"Jalan Sultan Abdullah, Bandar Baru",,,4.01620,101.02331,osm,
+e107,food,restaurant,Restoran Min Kee,"Jalan Sultan Abdullah, Bandar Baru",,,4.00950,101.01928,osm,
+e108,food,restaurant,River View Restaurant,"Jalan Maharaja Lela, Batak Rabit",,,4.00232,101.00877,osm,
+e109,food,restaurant,SP River View,"Jalan Maharaja Lela, Batak Rabit",,,4.00238,101.00865,osm,
+e110,food,restaurant,SeChuan Seafood Restaurant,"Jalan Maharaja Lela, Bandar Baru",,,4.01190,101.01751,osm,Seafood
+e111,food,restaurant,See Chuan Seafood Restaurant,"Lorong Enggang C4/1, Bandar Baru",,,4.01024,101.01905,osm,Seafood
+e112,food,restaurant,Tai Chong Seafood,"Jalan Changkat Jong, Bandar Baru",,,4.01578,101.02999,osm,Seafood
+e113,food,restaurant,A Ajmal Nasi Kandar,"Jalan Changkat Jong, Bandar Baru",,,4.01753,101.02821,osm,Nasi kandar
+e114,food,restaurant,Old Anson Road Nasi Kandar,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02484,101.02254,osm,Nasi kandar
+e115,food,restaurant,Fazari Maju,Jalan Sungai Manik,,Open 24 hours,4.01756,101.04478,osm,
+e116,food,restaurant,M Gulam Rasul,"Jalan Changkat Jong, Bandar Baru",,Open 24 hours,4.01004,101.03476,osm,
+e117,food,restaurant,Shameema Begam Gulam Rasul,"Jalan Changkat Jong, Bandar Baru",,,4.01077,101.03397,osm,
+e118,food,restaurant,Makanan Barat P&S,"Lorong Bendahara F1/1, Bandar Baru",,"Mon to Fri 15:00 to 23:00, Sat and Sun 12:00 to 23:00",4.01618,101.03149,osm,Western food
+e119,food,cafe,OldTown White Coffee,Bandar Baru,,,4.01760,101.02725,osm,
+e120,food,cafe,Starbucks,"Jalan Intan 2, Bandar Baru",,,4.02028,101.02330,osm,
+e121,food,bakery,Just To Eat,"Jalan Jawa, Bandar Baru",,,4.02076,101.02570,osm,Bakery
+e122,shopping,market,Pasar Besar Teluk Intan,"Jalan Market, Bandar Lama",,,4.02893,101.01892,osm,Main wet market
+e123,shopping,supermarket,Lotus's,"Jalan Changkat Jong, Bandar Baru",,Daily 08:00 to 22:00,4.01716,101.02687,osm,
+e124,shopping,supermarket,The Store,"Jalan Ah Cheong, Bandar Lama",,,4.02504,101.02169,osm,
+e125,shopping,supermarket,TF Value-Mart (Batak Rabit),"Jalan Maharaja Lela, Batak Rabit",,,3.99937,101.01008,osm,
+e126,shopping,supermarket,TF Value-Mart (Jalan Sungai Manik),Jalan Sungai Manik,,10:00 to 22:00,4.01568,101.04253,osm,
+e127,shopping,convenience,99 Speedmart (Jalan Pasar),"Jalan Pasar, Bandar Lama",,,4.02800,101.01401,osm,
+e128,shopping,convenience,99 Speedmart (Jalan Laksamana),"Jalan Laksamana, Bandar Baru",,,4.01124,101.03994,osm,
+e129,shopping,convenience,99 Speedmart (Jalan Kempas),"Jalan Kempas, Bandar Baru",,,4.00343,101.01779,osm,
+e130,shopping,convenience,"99 Speedmart (Lorong 1, Bandar Baru)","Lorong 1, Bandar Baru",,,4.00521,101.02489,osm,
+e131,shopping,convenience,99 Speedmart (Batak Rabit),"Lorong 1, Batak Rabit",,,3.98911,101.01110,osm,
+e132,shopping,convenience,99 Speedmart (Jalan Sungai Manik),Jalan Sungai Manik,,,4.03361,101.04557,osm,
+e133,shopping,convenience,Pasar Mini Anson One,"Jalan Sultan Abdullah, Bandar Baru",,,4.00979,101.01945,osm,
+e134,stay,hotel,Angsoka Hotel,"Jalan Changkat Jong, Bandar Baru",+60 5-622 3755,,4.01556,101.02855,osm,
+e135,stay,hotel,Anson Hotel,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02545,101.02237,osm,
+e136,stay,hotel,Chin Yee Hotel,"Jalan Changkat Jong, Bandar Baru",,,4.01100,101.03276,osm,
+e137,stay,hotel,Hotel Grand Court,"G-3, Menara GSM, Jalan Padang Tembak, Batak Rabit",+60 5-622 6624,,4.00220,101.01146,osm,
+e138,stay,hotel,Hotel Haruman Puas,"Jalan Manggis, Bandar Baru",,,4.00994,101.03057,osm,
+e139,stay,hotel,Hotel Hoover,,+60 5-622 2216,,4.01344,101.02164,osm,
+e140,stay,hotel,Hotel Star,"Jalan Sultan Abdullah, Bandar Baru",+60 5-623 7933,,4.01609,101.02312,osm,
+e141,stay,hotel,Inn Hotel,Jalan Sungai Manik,+60 5-621 8386,,4.01765,101.04478,osm,
+e142,stay,hotel,Lavender Hotel,"Jalan Changkat Jong, Bandar Baru",+60 5-621 5279,,4.01526,101.03071,osm,
+e143,stay,hotel,Lux Hotel,"Jalan Changkat Jong, Bandar Baru",,,4.01104,101.03368,osm,
+e144,stay,hotel,Merge Summit Boutique Hotel,"Jalan Changkat Jong, Bandar Baru",+60 5-622 6311,,4.01091,101.03383,osm,
+e145,stay,hotel,Yew Boutique Hotel,"Jalan Pasar, Bandar Lama",+60 5-623 6688,,4.02829,101.01323,osm,
+e146,worship,mosque,Masjid Daerah Sultan Idris II,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02241,101.02171,osm,District mosque
+e147,worship,mosque,Masjid Melayu Teluk Intan,"Jalan Selat, Bandar Lama",,,4.02642,101.02091,osm,
+e148,worship,mosque,Masjid India Muslim,"Jalan Ah Cheong, Bandar Lama",,,4.02797,101.01649,osm,Historic Indian Muslim mosque
+e149,worship,mosque,Masjid As-Saadah,Kampung Bahagia,,,4.03266,101.04393,osm,
+e150,worship,mosque,Masjid An-Naim,Batak Rabit,,,4.00029,101.01714,osm,
+e151,worship,mosque,Masjid At-Taqwa,Jalan Padang Tembak,,,3.98911,101.03452,osm,
+e152,worship,mosque,Masjid Al-Maaidah,Taman Melor,,,4.02236,101.04606,osm,
+e153,worship,mosque,Masjid Al-Khairiah,Kampung Banjar,,,3.97799,101.03018,osm,
+e154,worship,mosque,Masjid Al-Amjad,Jalan Sungai Manik,,,4.06484,101.04604,osm,
+e155,worship,mosque,Masjid Khalifah Umar Abdul Aziz,"Lorong 9, Batak Rabit",,,3.98568,101.00357,osm,
+e156,worship,mosque,Masjid Ubudiah,Sungai Durian,,,3.99956,100.97962,osm,
+e157,worship,surau,Surau Al-Amilliah,"Jalan Laksamana, Bandar Baru",,,4.01650,101.03399,osm,
+e158,worship,surau,Surau Al-Khairiah,"Jalan Sungai Nibong, Bandar Baru",,,4.02018,101.03377,osm,
+e159,worship,surau,Surau An-Nur,Bandar Baru,,,4.00378,101.02008,osm,
+e160,worship,surau,Surau Hidayatul Islamiah,Taman Cicely,,,4.00510,101.04629,osm,
+e161,worship,temple,Hock Soon Temple (Hock Soon Keong),,,,,,wiki,"Chinese temple, main building dated 1883. Address not recorded"
+e162,worship,temple,Sri Subramaniam (Thendayuthapani) Temple,,,,,,wiki,Hindu temple known for the Chitra Pournami festival. Address not recorded
+e163,worship,temple,Kuil Sri Maha Mariamman,"Jalan Sultan Abdullah, Bandar Baru",,,4.00389,101.01520,osm,Hindu temple
+e164,worship,temple,Kuil Sri Rajamuniandy,"Jalan Sungai Nibong, Bandar Baru",,,4.01886,101.03457,osm,Hindu temple
+e165,worship,temple,Sri Vellai Vinayagar Temple,"Jalan Changkat Jong, Bandar Baru",,,4.01156,101.03278,osm,Hindu temple
+e166,worship,temple,Shirdi Sai Baba Temple,"Jalan Mustafa Al Bakri, Bandar Baru",,,4.01553,101.02190,osm,
+e167,worship,temple,Manal Medhu Temple,"Jalan Bandar, Bandar Lama",,,4.03048,101.02201,osm,
+e168,worship,gurdwara,Gurdwara Sahib Teluk Intan,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02534,101.02218,osm,Sikh temple
+e169,worship,church,St. Anthony Church,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02715,101.02312,osm,
+e170,worship,church,St. Luke Church,"Jalan Mah Pooi Soo, Bandar Lama",,,4.02294,101.02199,osm,
+e171,worship,church,Teluk Intan Chinese Methodist Church,"Jalan Raja Musa, Bandar Baru",,,4.02378,101.02366,osm,
+e172,transport,bus station,Terminal Intan,"Hala Intan, Bandar Baru",,,4.01816,101.02120,osm,Main bus terminal
+e173,transport,fuel,Shell (Jalan Mahkota),"Jalan Mahkota, Bandar Lama",,06:00 to 23:00,4.02476,101.02008,osm,
+e174,transport,fuel,Shell (Jalan Changkat Jong),"Jalan Changkat Jong, Bandar Baru",,Open 24 hours,4.01952,101.02572,osm,
+e175,transport,fuel,Shell (Batak Rabit),"Jalan Maharaja Lela, Batak Rabit",,Open 24 hours,4.00119,101.00938,osm,
+e176,transport,fuel,Petronas (Jalan Sultan Abdullah),"Jalan Sultan Abdullah, Bandar Baru",,,4.00411,101.01542,osm,
+e177,transport,fuel,Petronas (Taman Cicely),"Jalan Changkat Jong, Taman Cicely",,Open 24 hours,4.00425,101.04201,osm,
+e178,transport,fuel,Petron (Jalan Changkat Jong),"Jalan Changkat Jong, Bandar Baru",,Open 24 hours,4.01881,101.02689,osm,
+e179,transport,fuel,Petron (Jalan Maharaja Lela),"Jalan Maharaja Lela, Bandar Baru",,,4.00846,101.01546,osm,
+e180,transport,fuel,Petron (Jalan Sungai Manik),Jalan Sungai Manik,,,4.03313,101.04456,osm,
+e181,transport,fuel,BHPetrol,"Jalan Changkat Jong, Bandar Baru",,07:00 to 23:00,4.01933,101.02596,osm,
+e182,transport,fuel,Caltex,"Jalan Changkat Jong, Bandar Baru",,06:00 to 23:00,4.01600,101.02894,osm,
+e183,leisure,sight,Menara Condong Teluk Intan,"Jalan Selat, Bandar Lama",,,4.02519,101.01938,osm,"The Leaning Tower, built in 1885 as a water tower. A national heritage site, known locally as Jam Tinggi"
+e184,leisure,sight,Batu Tenggek war memorial,,,,,,wiki,"Granite boulder memorial to the fallen of the two world wars, at a junction in the town centre"
+e185,leisure,sight,Teluk Intan Old Police Station,"Jalan Mahkamah, Bandar Lama",,,4.02368,101.01850,osm,Historic ruins
+e186,leisure,river cruise,Teluk Intan Firefly Marvels River Cruise,,,,,,wiki,Guided cruise on Sungai Perak with herons at dusk and fireflies. Website www.fireflymarvels.com
+e187,leisure,park,Taman Intanova,Bandar Baru,,,4.01383,101.04079,osm,
+e188,leisure,park,Taman Sri Manggis,Bandar Baru,,,4.01349,101.03861,osm,
+e189,leisure,stadium,Mini Stadium Teluk Intan,"Jalan Speedy, Bandar Baru",,,4.02149,101.02475,osm,
+e190,leisure,cinema,My Cinemas,"Jalan Putra, Bandar Lama",,,4.02696,101.01721,osm,
+e191,community,hall,Dewan Bandaran Teluk Intan,"Jalan Speedy, Bandar Baru",,,4.02272,101.02469,osm,Town hall
+e192,community,hall,Dewan Seri Bahagia,"Jalan Kampung Bahagia, Bandar Baru",,,4.02258,101.03895,osm,
+e193,community,hall,Dewan Sheng Fong Kong,"Jalan Bandar, Bandar Lama",,,4.03008,101.02256,osm,
+e194,community,library,Perpustakaan Awam Hilir Perak,"Jalan Selat, Bandar Lama",,,4.02745,101.02119,osm,Hilir Perak public library
