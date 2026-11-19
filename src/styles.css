@@ -216,7 +216,5 @@ a { color: var(--brand); }
 
 /* Standalone preview notices and viewport support. */
 html, body { height: 100%; height: 100dvh; }
-.preview-notice { flex: none; margin: 0 1.25rem .75rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
-.preview-notice a { white-space: nowrap; }
 .pcard-check { margin-top: .375rem; font-size: .8125rem; color: var(--brick); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
