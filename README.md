@@ -1,6 +1,8 @@
 # TanyaLokal prototype
 
-A shareable, mobile-first Teluk Intan prototype adapted from the supplied HTML reference. It preserves the illustration, layout, Malay/English switch, topic browsing, directory cards, Insights and QR screen.
+A shareable, mobile-first Teluk Intan prototype adapted from the supplied HTML reference. It retains the layout, Malay/English switch, topic browsing, directory cards, Insights and QR screen, with a ChatGPT web generated hero illustration and a separately animated tower.
+
+The banner art direction and exact generation prompts are recorded in [docs/BANNER-ART.md](docs/BANNER-ART.md). Its background and transparent tower are bundled local assets; the tower tilts from its base after the image loads and stays still when reduced motion is preferred.
 
 ## Run locally
 

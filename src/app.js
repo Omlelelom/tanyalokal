@@ -3,6 +3,10 @@ import GUIDES from "./data/guides.json";
 import qrcode from "qrcode-generator";
 import { getReply, redact, filterEntryIds } from "./assistant.js";
 
+// Start the banner's tilt after its illustrated tower has decoded, including on a cold load.
+const heroTower = document.querySelector(".hero-tower");
+if (heroTower) heroTower.decode().then(() => heroTower.classList.add("is-ready")).catch(() => {});
+
 
 "use strict";
 const byId = Object.fromEntries(ENTRIES.map(e => [e.id, e]));
